@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Barra de Navegación Vertical</title>
+  <script src="https://kit.fontawesome.com/6880616d13.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #000;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 200px; /* Ajusta el ancho de la barra de navegación vertical según sea necesario */
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      display: block;
+      position: relative;
+    }
+
+    a {
+      display: block;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    a:hover {
+      background-color: #333;
+    }
+
+    .logo {
+      padding: 20px;
+    }
+
+    .icon {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <ul>
+      <li><a href="#"><i class="fa-solid fa-house icon"></i> Inicio</a></li>
+      <li><a href="#"><i class="fa-solid fa-magnifying-glass icon"></i>Busqueda</a></li>
+      <li><a href="#"><i class="fa-solid fa-regular fa-compass icon"></i> Explorar</a></li>
+      <li><a href="#"><i class="fa-solid fa-regular fa-film icon"></i> Reels</a></li>
+      <li><a href="#"><i class="fa-solid fa-regular fa-envelope icon"></i> Mensajes</a></li>
+      <li><a href="#"><i class="fa-solid fa-regular fa-bell icon"></i> Notificaciones</a></li>
+      <li><a href="#"><i class="fa-solid fa-circle-plus icon"></i> Crear</a></li>
+      <li><a href="#"><i class="fa-solid fa-shield-halved icon"></i> Perfil</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
